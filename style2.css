@@ -26,8 +26,8 @@ transform: translateX(-1px);
 #header h2{
     flex: 2;
     margin: 0;
-     display: inline-block;
-}
+
+}     
 
 
 #header #search-bar 
@@ -68,7 +68,7 @@ transform: translateX(-1px);
     
     }
 #content aside {
-   flex: 3;
+   flex: 2;
   padding: 10px;
     }
     #content aside a {
