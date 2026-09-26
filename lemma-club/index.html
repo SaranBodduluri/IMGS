@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lemma Club</title>
+  <meta name="description" content="Lemma Club is a student-run math club with weekly problem nights, talks, competition prep and socials.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="draft-note" hidden>Draft site: names, photos and events are placeholders. Update them in <code>js/content.js</code>.</p>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html" aria-label="Lemma Club, home">
+        <span class="qed" aria-hidden="true"></span><span class="wm-name">Lemma</span><span class="wm-club">Club</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="events.html">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <figure class="photo-frame group-photo" data-photo>
+          <img src="assets/group-photo.jpg" alt="Lemma Club members together">
+          <div class="photo-empty graph">
+            <p class="photo-empty-title">Group photo</p>
+            <p class="photo-empty-hint">Save it as assets/group-photo.jpg</p>
+          </div>
+        </figure>
+
+        <div class="hero-text">
+          <p class="thm">
+            <span class="thm-head">Lemma.</span>
+            <span class="thm-body">Every hard problem gets easier with <span class="mark">good company</span>.</span>
+          </p>
+          <div class="hero-side">
+            <p class="proof"><span class="proof-head">Proof.</span> Come to a meeting and see for yourself.<span class="tomb" aria-hidden="true"></span></p>
+            <p class="lede">Lemma Club is a student-run math club. We meet every week for problem nights, talks and competition prep, and anyone curious about math is welcome.</p>
+            <div class="cta-row">
+              <a class="btn" href="events.html">See the calendar</a>
+              <a class="btn btn-ghost" href="about.html">About the club</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Coming up</p>
+            <h2>Next on the calendar</h2>
+          </div>
+          <a class="text-link" href="events.html">Full calendar →</a>
+        </div>
+        <ul class="ev-list" id="next-events" data-count="3"></ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap join-grid">
+        <div>
+          <p class="eyebrow">Join us</p>
+          <h2>No sign-up, no prerequisites</h2>
+          <p class="lede">You don't need to be a math major or have done competition math. Drop in to any meeting and grab a problem.</p>
+        </div>
+        <dl class="facts">
+          <div>
+            <dt>Meetings</dt>
+            <dd data-club="meeting">Wednesdays, 6:30 pm</dd>
+          </div>
+          <div>
+            <dt>Where</dt>
+            <dd data-club="location">Room TBA</dd>
+          </div>
+          <div>
+            <dt>Follow</dt>
+            <dd data-links>
+              <a data-club-link="instagram" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+              <a data-club-link="email" href="#" hidden><span data-club-text>Email</span></a>
+              <span data-links-empty hidden>Links coming soon</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html" aria-label="Lemma Club, home">
+          <span class="qed" aria-hidden="true"></span><span class="wm-name">Lemma</span><span class="wm-club">Club</span>
+        </a>
+        <p>A student-run mathematics club.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="about.html">About us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="events.html">Events</a>
+        <a data-club-link="instagram" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+      </nav>
+      <p class="fine">© <span data-year>2026</span> Lemma Club</p>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

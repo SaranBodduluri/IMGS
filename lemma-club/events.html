@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Events | Lemma Club</title>
+  <meta name="description" content="Lemma Club's calendar of problem nights, talks, competitions and socials.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p class="draft-note" hidden>Draft site: names, photos and events are placeholders. Update them in <code>js/content.js</code>.</p>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="index.html" aria-label="Lemma Club, home">
+        <span class="qed" aria-hidden="true"></span><span class="wm-name">Lemma</span><span class="wm-club">Club</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="about.html">About us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="events.html" aria-current="page">Events</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap page-head">
+      <p class="eyebrow">Events</p>
+      <h1>Calendar</h1>
+      <p class="lede">Problem nights, talks, competitions and socials. Every event is free and open to all students. Tap a date to jump to its details.</p>
+    </section>
+
+    <section class="wrap">
+      <div class="cal" id="calendar">
+        <div class="cal-bar">
+          <h2 class="cal-title" id="cal-title" aria-live="polite">Calendar</h2>
+          <div class="cal-nav">
+            <button class="icon-btn" id="cal-prev" type="button" aria-label="Previous month">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+            </button>
+            <button class="btn btn-ghost btn-sm" id="cal-today" type="button">Today</button>
+            <button class="icon-btn" id="cal-next" type="button" aria-label="Next month">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+        <div class="cal-grid" id="cal-grid"></div>
+        <ul class="cal-legend" aria-label="Event types">
+          <li class="tag" data-type="meeting">Meeting</li>
+          <li class="tag" data-type="talk">Talk</li>
+          <li class="tag" data-type="competition">Competition</li>
+          <li class="tag" data-type="social">Social</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-flush">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="month-title">Events this month</h2>
+        </div>
+        <ul class="ev-list" id="month-events"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <a class="wordmark" href="index.html" aria-label="Lemma Club, home">
+          <span class="qed" aria-hidden="true"></span><span class="wm-name">Lemma</span><span class="wm-club">Club</span>
+        </a>
+        <p>A student-run mathematics club.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="about.html">About us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="events.html">Events</a>
+        <a data-club-link="instagram" href="#" target="_blank" rel="noopener" hidden>Instagram</a>
+      </nav>
+      <p class="fine">© <span data-year>2026</span> Lemma Club</p>
+    </div>
+  </footer>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
